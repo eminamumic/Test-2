@@ -12,9 +12,10 @@ console.log(pomjeriNule([0, 0, 5, 0, 7, 0, 9]));
 */
 
 let pomjeriNule = (niz) => {
-  let nule = niz.filter((element) => element === 0)
-  let ostaliBrojevi = niz.filter((element) => element !== 0)
-  return (pomjerenNiz = [...ostaliBrojevi, ...nule])
+  return [
+    ...niz.filter((element) => element !== 0),
+    ...niz.filter((element) => element === 0),
+  ]
 }
 
 console.log(pomjeriNule([0, 1, 0, 3, 12]))
