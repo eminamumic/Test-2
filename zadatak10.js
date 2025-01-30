@@ -24,3 +24,5 @@ let jeAritmetickiNiz = (niz) => {
 }
 
 console.log(jeAritmetickiNiz([2, 4, 6, 8, 10]))
+
+//NIJE ZAVRSEN
